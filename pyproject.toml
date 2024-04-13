@@ -1,0 +1,8 @@
+[tool.black]
+line-length = 120
+exclude = "(.eggs|.git|.hg|.mypy_cache|.venv|_build|buck-out|build|dist|_notebooks/.*)"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = ["inference_v2", "controlnets", "dashtoon_pipelines", "loras", "models", "payloads", "pipeline", "segment", "textualInversions", "upscaler", "utils", "webui", "queue_handler", "redis_queue", "api", "pipeline_runners", "schema", "storage", "diffusers_custom", "execution", "server", "settings", "u2net_background_removal", "llama_inpainting", "nudenet_detector", "worker", "saicinpainting", "briaai_RMBG_handler", "efficientvit", "efficientvit_sam", "efficientvit_sam_handler", "fastsam_handler"]
